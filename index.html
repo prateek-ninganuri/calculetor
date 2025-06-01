@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calce.css">
+</head>
+<body>
+   <div class="calculator">
+    <div class=output>
+        <input id="display" type="text" color="white" max="8" readonly>
+    </div>
+    <div class="keypad">
+       <div class="row1"> 
+        <button class="buttons" id="plus"  onclick="appendToDisplay('+')">+</button>
+        <button class="buttons" id="minus" onclick="appendToDisplay('-')">-</button>
+        <button class="buttons" id="multiply" onclick="appendToDisplay('*')">x</button>
+        <button class="buttons" id="devidde" onclick="appendToDisplay('/')">/</button>
+    </div>
+    <div class="row2"> 
+
+        <button class="buttons" id="9" onclick="appendToDisplay('9')">9</button>
+        <button class="buttons"  id="8"onclick="appendToDisplay('8')">8</button>
+        <button class="buttons"  id="7" onclick="appendToDisplay('7')">7</button>
+        <button class="buttons" id="6" onclick="appendToDisplay('6')">6</button>
+        
+        </div>
+        <div class="row3"> 
+        <button class="buttons" id="5" onclick="appendToDisplay('5')">5</button>
+        <button class="buttons" id="4" onclick="appendToDisplay('4')">4</button>
+        <button class="buttons" id="3"onclick="appendToDisplay('3')">3</button>
+        <button class="buttons" id="2" onclick="appendToDisplay('2')">2</button>
+       </div>
+          <div class="row4">
+         <button class="buttons" id="1" onclick="appendToDsiplay('1')">1</button> 
+        <button class="buttons" id="0"onclick="appendToDisplay('0')">0</button>
+        <button class="buttons" id="dot" onclick="appendToDisplay('.')">.</button>
+        <button class="buttons" id="equalto" onclick="calculate()" >=</button>
+        </div>
+        <div class="row4"></div>
+        <button class="buttons" id="allclear" onclick="allclear()">c</button>
+        </div>
+        <script src="calce.js"></script>
+    </div>
+    </div> 
+</body>
+</html>
